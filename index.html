@@ -1,120 +1,120 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-	<head>
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-		<title>JS Slide Show</title>
-		<style type="text/css" media="screen">
-			html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline;} :focus { outline: 0; } body { line-height: 1; color: black; background: white; } ol, ul { list-style: none; } table { border-collapse: separate; border-spacing: 0; } caption, th, td { text-align: left; font-weight: normal; } blockquote:before, blockquote:after, q:before, q:after { content: ""; } blockquote, q { quotes: "" ""; }			
-			
-			body {
-				background:#222;
-				color:#CCC;
-			}
-			div#wrap {
-				margin: 60px auto 0px auto;
-				width: 900px;
-			}
-			h1 {
-				color:#FFF;
-				text-align:center;
-				letter-spacing:3px;
-				text-transform:uppercase;
-				font-weight:normal;
-				font-size:16px;
-			}
-			ul#slideshow {
-				text-align:center;
-			}
-				#slideshow li {
-					margin:10px 0px;
-				}
-				#slideshow li p {
-					margin-top:10px;
-					font-family:georgia, serif;
-					font-style:italic;
-					color:#666;
-				}
-				ul#slideshow li img {
-					border:10px solid #FFF;
-					height:600px;
-					-moz-border-radius:10px;
-					-webkit-border-radius:10px;
-				}
-				p.controls {
-					position:absolute;
-					bottom:100px;
-					right:100px;
-					color:#444;
-					font-size:10px;
-					text-transform:uppercase;
-					background:#000;
-					padding:10px;
-					-moz-border-radius:5px;
-					-webkit-border-radius:5px;
-				}
-					p.controls a {
-						color:#444;
-						text-decoration:none;
-					}
-						p.controls a:hover {
-							color:#FFF;
-						}
-		</style>		
-	</head>
-	<body>
-		<div id='wrap'>
-			<h1>Farewell</h1>
-			<p class="controls">
-			<a href='#' onclick='ss.stop();'>stop</a> |
-			<a href='#' onclick='ss.start();'>start</a>
-			</p>
-			<ul id='slideshow'>
-				<li><img src='images/heart.jpg' /><p>Farewell...</p></li>
-				<li><img src='images/nm_cards3.JPG' /></li>
-				<li><img src='images/nm_cards1.JPG' /></li>
-				<li><img src='images/nm_cards2.JPG' /></li>			
-				<li><img src='images/newmedians.png' /></li>
-				<li><img src='images/alex_ticket.jpg' /></li>
-				<li><img src='images/robert_think.JPG' /></li>
-				<li><img src='images/ballroom1.jpg' /></li>
-				<li><img src='images/ballroom2.JPG' /></li>
-				<li><img src='images/ballroom3.JPG' /></li>
-				<li><img src='images/bkstacker3.jpg' /></li>
-				<li><img src='images/bkstacker1.jpg' /></li>
-				<li><img src='images/bkstacker2.jpg' /></li>			
-				<li><img src='images/bkstacker4.jpg' /></li>
-				<li><img src='images/cubic_people.JPG' /></li>						
-				<li><img src='images/jeremy2.jpg' /></li>
-				<li><img src='images/jeremy3.jpg' /></li>			
-				<!-- <li><img src='images/peeing.jpg' /></li> -->
-				<li><img src='images/rob_jer_hiding.jpg' /></li>
-				<li><img src='images/robert_bday1.JPG' /></li>
-				<li><img src='images/robert_bday2.JPG' /></li>
-				<li><img src='images/robert_bigeyes.jpg' /></li>
-				<li><img src='images/robert_bigeyes2.jpg' /></li>			
-				<li><img src='images/robert_sack_head.JPG' /></li>			
-				<li><img src='images/scott1.jpg' /></li>
-				<li><img src='images/scott_meritage.JPG' /></li>
-				<li><img src='images/stairs2.jpg' /></li>
-				<li><img src='images/stairs1.jpg' /></li>			
-				<li><img src='images/startburst_coma.jpg' /></li>
-				<li><img src='images/todd_gangsta.JPG' /></li>
-				<li><img src='images/tough1.JPG' /></li>
-				<li><img src='images/tough2.JPG' /></li>
-				<li><img src='images/tough3.JPG' /></li>
-				<li><img src='images/tough6.JPG' /></li>
-				<li><img src='images/tough4.JPG' /></li>
-				<li><img src='images/tough5.JPG' /></li>			
-				<li><img src='images/will1.JPG' /></li>
-				<li><img src='images/wilsons.jpg' /></li>
-				<li><img src='images/wilsons2.jpg' /></li>
-				<li><img src='images/robert_pour.JPG' /><p>Farewell!</p></li>
-				<li><img src='images/jeremy1.jpg' /><p>Farewell!!</p></li>
-			</ul>
-			
-			
-		</div>
-		<script src="slideshowoo.js" type="text/javascript" charset="utf-8"></script>
-	</body>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>JS Slide Show</title>
+    <style type="text/css" media="screen">
+      html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline;} :focus { outline: 0; } body { line-height: 1; color: black; background: white; } ol, ul { list-style: none; } table { border-collapse: separate; border-spacing: 0; } caption, th, td { text-align: left; font-weight: normal; } blockquote:before, blockquote:after, q:before, q:after { content: ""; } blockquote, q { quotes: "" ""; }
+
+      body {
+        background:#222;
+        color:#CCC;
+      }
+      div#wrap {
+        margin: 60px auto 0px auto;
+        width: 900px;
+      }
+      h1 {
+        color:#FFF;
+        text-align:center;
+        letter-spacing:3px;
+        text-transform:uppercase;
+        font-weight:normal;
+        font-size:16px;
+      }
+      ul#slideshow {
+        text-align:center;
+      }
+        #slideshow li {
+          margin:10px 0px;
+        }
+        #slideshow li p {
+          margin-top:10px;
+          font-family:georgia, serif;
+          font-style:italic;
+          color:#666;
+        }
+        ul#slideshow li img {
+          border:10px solid #FFF;
+          height:600px;
+          -moz-border-radius:10px;
+          -webkit-border-radius:10px;
+        }
+        p.controls {
+          position:absolute;
+          bottom:100px;
+          right:100px;
+          color:#444;
+          font-size:10px;
+          text-transform:uppercase;
+          background:#000;
+          padding:10px;
+          -moz-border-radius:5px;
+          -webkit-border-radius:5px;
+        }
+          p.controls a {
+            color:#444;
+            text-decoration:none;
+          }
+            p.controls a:hover {
+              color:#FFF;
+            }
+    </style>
+  </head>
+  <body>
+    <div id='wrap'>
+      <h1>Farewell</h1>
+      <p class="controls">
+      <a href='#' onclick='ss.stop();'>stop</a> |
+      <a href='#' onclick='ss.start();'>start</a>
+      </p>
+      <ul id='slideshow'>
+        <li><img src='images/heart.jpg' /><p>Farewell...</p></li>
+        <li><img src='images/nm_cards3.jpg' /></li>
+        <li><img src='images/nm_cards1.jpg' /></li>
+        <li><img src='images/nm_cards2.jpg' /></li>
+        <li><img src='images/newmedians.png' /></li>
+        <li><img src='images/alex_ticket.jpg' /></li>
+        <li><img src='images/robert_think.jpg' /></li>
+        <li><img src='images/ballroom1.jpg' /></li>
+        <li><img src='images/ballroom2.jpg' /></li>
+        <li><img src='images/ballroom3.jpg' /></li>
+        <li><img src='images/bkstacker3.jpg' /></li>
+        <li><img src='images/bkstacker1.jpg' /></li>
+        <li><img src='images/bkstacker2.jpg' /></li>
+        <li><img src='images/bkstacker4.jpg' /></li>
+        <li><img src='images/cubic_people.jpg' /></li>
+        <li><img src='images/jeremy2.jpg' /></li>
+        <li><img src='images/jeremy3.jpg' /></li>
+        <!-- <li><img src='images/peeing.jpg' /></li> -->
+        <li><img src='images/rob_jer_hiding.jpg' /></li>
+        <li><img src='images/robert_bday1.jpg' /></li>
+        <li><img src='images/robert_bday2.jpg' /></li>
+        <li><img src='images/robert_bigeyes.jpg' /></li>
+        <li><img src='images/robert_bigeyes2.jpg' /></li>
+        <li><img src='images/robert_sack_head.jpg' /></li>
+        <li><img src='images/scott1.jpg' /></li>
+        <li><img src='images/scott_meritage.jpg' /></li>
+        <li><img src='images/stairs2.jpg' /></li>
+        <li><img src='images/stairs1.jpg' /></li>
+        <li><img src='images/startburst_coma.jpg' /></li>
+        <li><img src='images/todd_gangsta.jpg' /></li>
+        <li><img src='images/tough1.jpg' /></li>
+        <li><img src='images/tough2.jpg' /></li>
+        <li><img src='images/tough3.jpg' /></li>
+        <li><img src='images/tough6.jpg' /></li>
+        <li><img src='images/tough4.jpg' /></li>
+        <li><img src='images/tough5.jpg' /></li>
+        <li><img src='images/will1.jpg' /></li>
+        <li><img src='images/wilsons.jpg' /></li>
+        <li><img src='images/wilsons2.jpg' /></li>
+        <li><img src='images/robert_pour.jpg' /><p>Farewell!</p></li>
+        <li><img src='images/jeremy1.jpg' /><p>Farewell!!</p></li>
+      </ul>
+
+
+    </div>
+    <script src="slideshowoo.js" type="text/javascript" charset="utf-8"></script>
+  </body>
 </html>
