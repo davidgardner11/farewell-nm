@@ -4,7 +4,7 @@ function SlideShow(container, interval) {
       timer = false,
       container_id = container || 'slideshow',
       slides = document.getElementById(container_id).getElementsByTagName('li'),
-      interval = interval || 2000;
+      interval = interval || 700;
 
   this.start = function() {
     this.hideAll(slides);
